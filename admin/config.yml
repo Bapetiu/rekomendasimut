@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Bapetiu/rekomendasicimut
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "produk"
+    label: "Produk"
+    folder: "produk"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama Produk", name: "title", widget: "string" }
+      - { label: "Harga", name: "harga", widget: "string" }
+      - { label: "Kategori", name: "kategori", widget: "string" }
+      - { label: "Gambar", name: "gambar", widget: "image" }
+      - { label: "Link Shopee", name: "link", widget: "string" }
